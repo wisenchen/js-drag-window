@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js"></script>
+    <style></style>
+  </head>
+  <body>
+    <script>
+      const dragWindow = new JSDragWindow({
+        contentTemplate: `
+        <div id="box" style=" text-align: center">
+            content
+        </div>`,
+        dragWindowStyle: {
+          width: 600,
+          height: 400,
+          backgroundColor: "#fff",
+          borderWidth: 2,
+          // 出现位置
+          right: 200,
+          top: 100,
+        },
+        // 是否显示拖拽图标 默认为true
+        // isDrag: true,
+        // 自定义标题模板
+        headTemplate: "<div>wisen snippets</div>",
+      });
+    </script>
+  </body>
+</html>
